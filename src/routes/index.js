@@ -21,4 +21,15 @@ router.get('/', async function getRules(req, res) {
     }
 });
 
+
+router.get('/users', async function getRules(req, res) {
+    try {
+        return res.send({ success: 'You are all set to begin!' });
+    } catch (err) {
+        console.log(err);
+        return res.status(400).send({ error: err.message });
+    }
+});
+
+
 module.exports = router;
