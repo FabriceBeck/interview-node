@@ -1,3 +1,5 @@
+const User = require('../model/user.model.js')
+
 class UserService {
   private rawUsers = require('../data/users.json')
   private users = []
